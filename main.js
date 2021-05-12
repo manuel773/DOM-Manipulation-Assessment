@@ -18,66 +18,17 @@ item4Action.addEventListener('click', function() {
     item4.textContent += "The Document Object Model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document.";
 }); 
 
+red.classList.remove("bg-white");
+red.classList.add("bg-danger");
 
+blue.classList.remove("bg-white");
+blue.classList.add("bg-primary");
 
-const red = document.getElementById('red');
+yellow.classList.remove("bg-white");
+yellow.classList.add("bg-warning");
 
-red.addEventListener('click', function() {
-    if (red.classList.contains('bg-white')) {
-        red.classList.remove('bg-white');
-        red.classList.add('bg-danger');
-    } else {
-        red.classList.remove('bg-danger');
-        red.classList.add('bg-white');
-    }
-});
+green.classList.remove("bg-white");
+green.classList.add("bg-success");
 
-const blue = document.getElementById("blue");
-
-blue.addEventListener("click", function() {
-    if (blue.classList.contains("bg-white")) {
-    blue.classList.remove("bg-white");
-    blue.classList.add("bg-primary");
-    } else {
-    blue.classList.remove("bg-white");
-    blue.classList.add("bg-primary");
-    }
-});
-
-
-const yellow = document.getElementById('yellow');
-
-yellow.addEventListener('click', function() {
-    if (yellow.classList.contains('bg-white')) {
-        yellow.classList.remove('bg-white');
-        yellow.classList.add('bg-warning');
-    } else {
-        yellow.classList.remove('bg-white');
-        yellow.classList.add('bg-warning');
-    }
-});
-
-const green = document.getElementById('green');
-
-green.addEventListener('click', function() {
-    if (green.classList.contains('bg-white')) {
-        green.classList.remove('bg-white');
-        green.classList.add('bg-success');
-    } else {
-        green.classList.remove('bg-white');
-        green.classList.add('bg-success');
-    }
-});
-
-const black = document.getElementById('black');
-
-black.addEventListener('click', function() {
-    if (black.classList.contains('bg-white')) {
-        black.classList.remove('bg-white');
-        black.classList.add('bg-dark');
-    } else {
-        black.classList.remove('bg-white');
-        black.classList.add('bg-dark');
-    }
-});
-
+black.classList.remove("bg-white");
+black.classList.add("bg-dark");
